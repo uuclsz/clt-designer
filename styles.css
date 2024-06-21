@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background: linear-gradient(to right, white, #c50000);
+    color: black;
+}
+
+body.dark-mode {
+    background: linear-gradient(to right, #121212, #c50000);
+    color: white;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #c50000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #a40000;
+    transform: scale(1.05);
+}
+
+/* Estilos para as seções */
+#inicio, #modelos-arte, #contato {
+    padding: 20px;
+    border: 3px solid #c50000;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode #inicio,
+body.dark-mode #modelos-arte,
+body.dark-mode #contato {
+    background: rgba(18, 18, 18, 0.8);
+    border-color: #a40000;
+}
+
+/* Estilo para lista de contato */
+.contato-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-lista img {
+    margin-right: 10px;
+    width: 24px; /* ajuste o tamanho conforme necessário */
+    height: 24px; /* ajuste o tamanho conforme necessário */
+}
